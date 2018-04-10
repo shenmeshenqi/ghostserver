@@ -1,0 +1,32 @@
+{
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host"     : "127.0.0.1",
+            "user"     : "root",
+            "password" : "",
+            "database" : "ghost"
+        }
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": ["file", "stdout"]
+    },
+
+"mail":{
+"transport":"SMTP",
+	"options":{
+"service":"Mailgun",
+"auth":{"user":"postmaster@www.woshizhuziheng.com",
+"pass":"bf817f4d1a58a52120ecc60591b7588ebf"}
+}
+
+
+}
+}
