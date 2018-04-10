@@ -13,6 +13,22 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <style>
+    .post-card {
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 300px;
+    overflow: hidden;
+    margin: 0 20px 40px;
+    background: #e6f1ff 50%;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    transition: all .5s ease;
+}
+    </style>
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -33,7 +49,7 @@
                     <a href="{{@blog.url}}">主页</a>
                     {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
                     {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-                    
+
                 </nav>
             </div>
         </footer>
